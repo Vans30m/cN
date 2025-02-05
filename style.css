@@ -433,9 +433,16 @@ footer {
 @media (max-width: 768px) {
     /* Adjust nav and header for smaller devices */
     nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0; /* Stick nav to the top */
+        z-index: 1000; /* Ensure nav stays above the video */
+        background-color: var(--bg-light); /* Add a solid background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+        padding: 10px 5%; /* Adjust padding for better layout */
     }
 
     nav ul {
