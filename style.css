@@ -403,3 +403,168 @@ footer {
         width: 100%;
     }
 }
+
+/* Base Responsive Styles */
+@media (max-width: 1024px) {
+    /* Adjust header */
+    header {
+        padding: 15px 4%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .feature-cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust nav and header for smaller devices */
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0; /* Stick nav to the top */
+        z-index: 1000; /* Ensure nav stays above the video */
+        background-color: var(--bg-light); /* Add a solid background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+        padding: 10px 5%; /* Adjust padding for better layout */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li a {
+        font-size: 1rem;
+    }
+
+    /* Adjust hero section */
+    .hero {
+        padding: 60px 3%;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust buttons */
+    .btn-17 {
+        padding: 0.7rem 2rem;
+    }
+
+    /* Features section */
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Navigation */
+    nav ul {
+        gap: 5px;
+    }
+
+    nav li a {
+        font-size: 0.9rem;
+    }
+
+    /* Hero section */
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* How it works */
+    .steps {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .step {
+        max-width: 100%;
+    }
+
+    /* Mentor cards */
+    .mentor-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mentor-cards .card img {
+        max-width: 100px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 4%;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+/* Ultra-Small Devices (Less than 400px) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 0.7rem;
+    }
+
+    .hero button {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .feature-cards,
+    .steps {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mentor-cards .card img {
+        max-width: 80px;
+    }
+}
+
